@@ -1,0 +1,481 @@
+
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #e7f5ff;
+    --warm-black:#201E1C;
+    --black: #282623;
+    --gray: #bababa;
+    --gray-soft: #757575;
+    --gray-middle: #808080;
+    --off-white: #FAF8F7;
+    --just-white: #fff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+/* Estilos de la cabecera */
+.cabecera {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(207.8deg,#201E1C 16.69%, #F7931A 100%);
+}
+.cabecera__img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+.cabecera__textos {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+.cabecera__titulo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--just-white);
+}
+.cabecera__resumen {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.cabecera__boton {
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.boton-flotante {
+    position: absolute;
+    width: 229px;
+    display: block;
+    top: 270px;
+    left: calc(50% - 118px);
+    padding: 15px;
+    margin-top: 35px;
+}
+.cabecera__boton-span {
+    width: 13px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url("../assets/icons/down-arrow.svg");
+}
+/* Estilos de la sección principal (intercambio, beneficios y planes) */
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+/* Sección de intercambio */
+.intercambio {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.intercambio__fondo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.intercambio__textos {
+    width: 100%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.intercambio__titulo {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.intercambio__resumen {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--gray-soft);
+}
+.tabla {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-family: "Inter", sans-serif;
+}
+.tabla__titulo {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+}
+.naranja {
+    color: var(--bitcoin-orange);
+}
+.azul {
+    color: var(--secondary-blue);
+}
+.tabla__contenedor {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.tabla__tabla {
+    width: 100%;
+    height: 100%;
+}
+.tabla__columna {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--gray);
+    background-color: var(--just-white);
+}
+.redondea__topleft {
+    border-radius: 15px 0 0 0;
+}
+.redondea__topright {
+    border-radius: 0 15px 0 0;
+}
+.redondea__bottomright {
+    border-radius: 0 0 15px 0;
+}
+.redondea__bottomleft {
+    border-radius: 0 0 0 15px;
+}
+.derecha {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: var(--gray-soft);
+}
+.tabla__columna-icon {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.up {
+    background-image: url("../assets/icons/trending-up.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.down {
+    background-image: url("../assets/icons/trending-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tabla__actualizacion {
+    width: 180px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+}
+.naranjaclaro {
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--gray-soft);
+}
+.azulclaro {
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--gray-soft);
+}
+/* Sección de beneficios */
+.beneficios {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+.beneficios__logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top:-10px;
+    left: calc(50% - 20px);
+    background-image: url("../assets/icons/batata.svg");
+}
+.beneficios__textos {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.beneficios__titulo {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.beneficios__resumen {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--gray-middle);
+}
+.tarjeta {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.tarjeta__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.tarjeta__titulo {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.tarjeta__resumen {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--gray-middle);
+}
+.time {
+    background-image: url("../assets/icons/clock.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eye {
+    background-image: url("../assets/icons/eye.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dollar {
+    background-image: url("../assets/icons/dollar-sign.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.check {
+    background-image: url("../assets/icons/check-circle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Sección Planes */
+.planes__imagenPromo {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("../assets/img/bitcoinbaby.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.planes__textoPromo {
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.planes__contenedor {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.planes__textos {
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.planes__titulo {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.planes__resumen {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--gray-soft);
+}
+.tarjeta1 {
+    scroll-snap-align: center;/* para que funcione el scroll del contenedor */
+    position: relative;
+    width: 70%;
+    min-width: 190px;
+    max-width: 200px;
+    height: 250px;
+    margin: 50px 5px; /* espacios entre las tarjetas */
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.tarjeta1__recomendado {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+    left: calc(50% - 60px);  /* centrando el absolute */
+    top: -15px;
+    font-size: 1.2rem;
+    padding: 6px;
+}
+.tarjeta1__titulo {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.tarjeta1__precio {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+.trajeta1__precioS { 
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 85px);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.tarjeta1__resumen {
+    font-size: 1.2rem;
+    color: var(--gray-soft);
+}
+.tarjeta1__boton {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.tarjeta1__boton-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+/* Generando el scoll horizontal con el contenedor principal de las tarjetas */
+.planes__tarjeta {
+    display: flex;
+    height: 400px;
+    padding-inline: 30px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 20px; /* Esto es nuevo de flexbox y puede que no este implementado en todos los navegadore, le da separacion a las tarjetas, lo hice mas arriba con margin = 5px a los lados :) */
+}
+.planes__tarjeta::-webkit-scrollbar {
+    height: 10px;
+}
+.planes__tarjeta::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid var(--bitcoin-orange);
+    box-shadow:inset 5px 5px 10px #FFF,inset -5px -5px 15px #dbe0e7;
+}
+/* Estilos del footer */
+footer {
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+    display: flex;
+    background-color: var(--bitcoin-orange);
+}
+.pie__contenedores {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie__lista {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.pie__elemento {
+    margin: 10px 0;
+}
+.pie__elemento-enlace {
+    text-decoration: none;
+    color: var(--just-white);
+}
